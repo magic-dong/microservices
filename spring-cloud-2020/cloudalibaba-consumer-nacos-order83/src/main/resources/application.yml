@@ -1,0 +1,32 @@
+server:
+  port: 83
+
+
+spring:
+  application:
+    name: nacos-order-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+
+#消费者将要去访问的微服务名称(注册成功进nacos的微服务提供者)
+service-url:
+  nacos-user-service: http://nacos-payment-provider
+
+
+#日志
+logging:
+  config: classpath:logback-admin.xml
+log:
+  level:
+    root: info
+    my: debug
+  file: logs/nacos-order83.log
+  #日志文件最大xxMB
+  maxSize: 30MB 
+  #保存xx天的日志
+  maxHistory: 20
+  #日志文件所在储存空间最大xxGB
+  totalSizeCap: 10GB

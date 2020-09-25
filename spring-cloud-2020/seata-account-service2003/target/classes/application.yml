@@ -1,0 +1,85 @@
+server:
+  port: 2003
+
+spring:
+  application:
+    name: seata-account-service
+  cloud:
+    alibaba:
+      seata:
+        #自定义事务组名称需要与seata-server中的对应
+        tx-service-group: ms_tx_group
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  datasource:
+    # 当前数据源操作类型
+    type: com.alibaba.druid.pool.DruidDataSource            
+    druid:
+      # mysql驱动包
+      driver-class-name: com.mysql.jdbc.Driver           
+      url: jdbc:mysql://localhost:3306/seata_account?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: root
+      # 初始连接数
+      initialSize: 10
+      # 最小连接池数量
+      minIdle: 5
+      # 最大连接池数量
+      maxActive: 30
+      # 配置获取连接等待超时的时间
+      maxWait: 60000
+      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      minEvictableIdleTimeMillis: 1800000
+      validationQuery: SELECT 1 FROM DUAL
+      # 配置是否有空闲连接
+      testWhileIdle: true
+      # 配置是否在从池中取出连接前进行检验,若检验失败,则从池中去除连接并尝试取出另一个
+      testOnBorrow: false
+      # 配置是否在归还到池中前进行检验
+      testOnReturn: false
+      #连接出错后重试机制，默认false
+      #false:若跟数据库连接失败会一直重试，新的请求都会尝试去数据库获取连接
+      #true:重试设置次数后，就算数据库服务恢复，也不进行重连，必须重启应用程序
+      #breakAfterAcquireFailure: false
+      #连接出错后重试次数，默认为1
+      #connectionErrorRetryAttempts: 1
+      #连接出错后重试时间间隔，单位毫秒
+      #timeBetweenConnectErrorMillis: 30000
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      filters: stat,wall,slf4j
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+#开启feign的hystrix支持,默认是false
+feign:
+  hystrix:
+    enabled: false
+
+mybatis:
+  mapperLocations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.lzd.springcloud.alibaba.entity    # 所有Entity别名类所在包
+  configLocation: classpath:mybatis-config.xml
+
+#日志
+logging:
+  level:
+    io:
+      seata: info
+  config: classpath:logback-admin.xml
+
+  
+log:
+  level:
+    root: info
+    my: debug
+  file: logs/seataAccount2003.log
+  #日志文件最大xxMB
+  maxSize: 30MB 
+  #保存xx天的日志
+  maxHistory: 20
+  #日志文件所在储存空间最大xxGB
+  totalSizeCap: 10GB
+  

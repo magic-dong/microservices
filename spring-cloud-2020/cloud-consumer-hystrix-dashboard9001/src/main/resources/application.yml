@@ -1,0 +1,24 @@
+server:
+  port: 9001
+
+
+spring:
+  application:
+    name: cloud-consumer-hystrix-dashboard
+  
+#日志
+logging:
+  config: classpath:logback-admin.xml
+log:
+  level:
+    root: info
+    my: debug
+  file: logs/hystrixDashboard9001.log
+  #日志文件最大xxMB
+  maxSize: 30MB 
+  #保存xx天的日志
+  maxHistory: 20
+  #日志文件所在储存空间最大xxGB
+  totalSizeCap: 10GB
+
+

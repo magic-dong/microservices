@@ -1,0 +1,33 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: nacos-payment-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #配置Nacos地址
+        # 换成nginx的1111端口，做集群
+        #server-addr: 172.20.3.233:1111
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+#日志
+logging:
+  config: classpath:logback-admin.xml
+log:
+  level:
+    root: info
+    my: debug
+  file: logs/nacos-payment9002.log
+  #日志文件最大xxMB
+  maxSize: 30MB 
+  #保存xx天的日志
+  maxHistory: 20
+  #日志文件所在储存空间最大xxGB
+  totalSizeCap: 10GB

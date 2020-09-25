@@ -1,0 +1,62 @@
+2020-09-25 10:21:37,749 [main] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 10:21:48,576 [main] INFO  -[StartupInfoLogger.java:61]- Started SeataStorage2002Application in 13.941 seconds (JVM running for 14.451)
+2020-09-25 10:29:14,037 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 10:29:18,998 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataStorage2002Application in 6.076 seconds (JVM running for 6.642)
+2020-09-25 10:31:37,458 [http-nio-2002-exec-1] INFO  -[StorageServiceImpl.java:24]- ------->storage-service中扣减库存开始
+2020-09-25 10:31:37,485 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_storage SET used = used + ?,residue = residue - ? WHERE product_id = ? 
+2020-09-25 10:31:37,749 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 10(Integer), 10(Integer), 1(Long)
+2020-09-25 10:31:37,908 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 10:31:37,910 [http-nio-2002-exec-1] INFO  -[StorageServiceImpl.java:26]- ------->storage-service中扣减库存结束
+2020-09-25 10:40:41,881 [http-nio-2002-exec-3] INFO  -[StorageServiceImpl.java:24]- ------->storage-service中扣减库存开始
+2020-09-25 10:40:41,884 [http-nio-2002-exec-3] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_storage SET used = used + ?,residue = residue - ? WHERE product_id = ? 
+2020-09-25 10:40:41,886 [http-nio-2002-exec-3] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 10(Integer), 10(Integer), 1(Long)
+2020-09-25 10:40:42,020 [http-nio-2002-exec-3] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 10:40:42,021 [http-nio-2002-exec-3] INFO  -[StorageServiceImpl.java:26]- ------->storage-service中扣减库存结束
+2020-09-25 10:46:41,990 [http-nio-2002-exec-6] INFO  -[StorageServiceImpl.java:24]- ------->storage-service中扣减库存开始
+2020-09-25 10:46:41,992 [http-nio-2002-exec-6] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_storage SET used = used + ?,residue = residue - ? WHERE product_id = ? 
+2020-09-25 10:46:41,993 [http-nio-2002-exec-6] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 10(Integer), 10(Integer), 1(Long)
+2020-09-25 10:46:42,093 [http-nio-2002-exec-6] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 10:46:42,094 [http-nio-2002-exec-6] INFO  -[StorageServiceImpl.java:26]- ------->storage-service中扣减库存结束
+2020-09-25 10:49:39,249 [http-nio-2002-exec-7] INFO  -[StorageServiceImpl.java:24]- ------->storage-service中扣减库存开始
+2020-09-25 10:49:39,251 [http-nio-2002-exec-7] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_storage SET used = used + ?,residue = residue - ? WHERE product_id = ? 
+2020-09-25 10:49:39,252 [http-nio-2002-exec-7] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 10(Integer), 10(Integer), 1(Long)
+2020-09-25 10:49:39,683 [http-nio-2002-exec-7] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 10:49:39,684 [http-nio-2002-exec-7] INFO  -[StorageServiceImpl.java:26]- ------->storage-service中扣减库存结束
+2020-09-25 10:50:32,106 [http-nio-2002-exec-5] INFO  -[StorageServiceImpl.java:24]- ------->storage-service中扣减库存开始
+2020-09-25 10:50:32,107 [http-nio-2002-exec-5] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_storage SET used = used + ?,residue = residue - ? WHERE product_id = ? 
+2020-09-25 10:50:32,108 [http-nio-2002-exec-5] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 10(Integer), 10(Integer), 1(Long)
+2020-09-25 10:50:32,214 [http-nio-2002-exec-5] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 10:50:32,215 [http-nio-2002-exec-5] INFO  -[StorageServiceImpl.java:26]- ------->storage-service中扣减库存结束
+2020-09-25 11:15:08,213 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 11:15:13,237 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataStorage2002Application in 6.227 seconds (JVM running for 6.812)
+2020-09-25 11:16:44,622 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 11:16:50,884 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataStorage2002Application in 7.556 seconds (JVM running for 8.419)
+2020-09-25 11:26:07,276 [http-nio-2002-exec-1] INFO  -[StorageServiceImpl.java:24]- ------->storage-service中扣减库存开始
+2020-09-25 11:26:07,347 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_storage SET used = used + ?,residue = residue - ? WHERE product_id = ? 
+2020-09-25 11:26:07,838 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 10(Integer), 10(Integer), 1(Long)
+2020-09-25 11:28:54,595 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 11:29:01,411 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataStorage2002Application in 8.213 seconds (JVM running for 9.092)
+2020-09-25 11:29:44,086 [http-nio-2002-exec-1] INFO  -[StorageServiceImpl.java:24]- ------->storage-service中扣减库存开始
+2020-09-25 11:29:44,117 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_storage SET used = used + ?,residue = residue - ? WHERE product_id = ? 
+2020-09-25 11:29:44,340 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 10(Integer), 10(Integer), 1(Long)
+2020-09-25 11:29:44,745 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 11:29:44,747 [http-nio-2002-exec-1] INFO  -[StorageServiceImpl.java:26]- ------->storage-service中扣减库存结束
+2020-09-25 11:37:17,035 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 11:37:23,835 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataStorage2002Application in 8.343 seconds (JVM running for 9.2)
+2020-09-25 11:38:35,654 [http-nio-2002-exec-1] INFO  -[StorageServiceImpl.java:24]- ------->storage-service中扣减库存开始
+2020-09-25 11:38:35,702 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_storage SET used = used + ?,residue = residue - ? WHERE product_id = ? 
+2020-09-25 11:38:35,973 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 10(Integer), 10(Integer), 1(Long)
+2020-09-25 11:38:36,351 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 11:38:36,352 [http-nio-2002-exec-1] INFO  -[StorageServiceImpl.java:26]- ------->storage-service中扣减库存结束
+2020-09-25 11:43:28,074 [http-nio-2002-exec-3] INFO  -[StorageServiceImpl.java:24]- ------->storage-service中扣减库存开始
+2020-09-25 11:43:28,075 [http-nio-2002-exec-3] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_storage SET used = used + ?,residue = residue - ? WHERE product_id = ? 
+2020-09-25 11:43:28,076 [http-nio-2002-exec-3] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 10(Integer), 10(Integer), 1(Long)
+2020-09-25 11:43:28,140 [http-nio-2002-exec-3] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 11:43:28,140 [http-nio-2002-exec-3] INFO  -[StorageServiceImpl.java:26]- ------->storage-service中扣减库存结束
+2020-09-25 11:49:11,682 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 11:49:17,648 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataStorage2002Application in 7.268 seconds (JVM running for 8.204)
+2020-09-25 11:49:59,092 [http-nio-2002-exec-1] INFO  -[StorageServiceImpl.java:24]- ------->storage-service中扣减库存开始
+2020-09-25 11:49:59,127 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_storage SET used = used + ?,residue = residue - ? WHERE product_id = ? 
+2020-09-25 11:49:59,369 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 10(Integer), 10(Integer), 1(Long)
+2020-09-25 11:49:59,644 [http-nio-2002-exec-1] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 11:49:59,646 [http-nio-2002-exec-1] INFO  -[StorageServiceImpl.java:26]- ------->storage-service中扣减库存结束

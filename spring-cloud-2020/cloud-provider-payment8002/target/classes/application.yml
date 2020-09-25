@@ -1,0 +1,94 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: cloud-payment-service
+#  zipkin:
+#      base-url: http://localhost:9411
+#  sleuth:
+#    sampler:
+#    #采样率值介于 0 到 1 之间，1 则表示全部采集
+#    probability: 1
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    druid:
+      driver-class-name: org.gjt.mm.mysql.Driver            # mysql驱动包
+      url: jdbc:mysql://localhost:3306/db2020?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: root
+      # 初始连接数
+      initialSize: 10
+      # 最小连接池数量
+      minIdle: 5
+      # 最大连接池数量
+      maxActive: 30
+      # 配置获取连接等待超时的时间
+      maxWait: 60000
+      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      minEvictableIdleTimeMillis: 1800000
+      validationQuery: SELECT 1 FROM DUAL
+      # 配置是否有空闲连接
+      testWhileIdle: true
+      # 配置是否在从池中取出连接前进行检验,若检验失败,则从池中去除连接并尝试取出另一个
+      testOnBorrow: false
+      # 配置是否在归还到池中前进行检验
+      testOnReturn: false
+      #连接出错后重试机制，默认false
+      #false:若跟数据库连接失败会一直重试，新的请求都会尝试去数据库获取连接
+      #true:重试设置次数后，就算数据库服务恢复，也不进行重连，必须重启应用程序
+      #breakAfterAcquireFailure: false
+      #连接出错后重试次数，默认为1
+      #connectionErrorRetryAttempts: 1
+      #连接出错后重试时间间隔，单位毫秒
+      #timeBetweenConnectErrorMillis: 30000
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      filters: stat,wall
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+
+eureka:
+  client:
+    #表示是否将自己注册进EurekaServer默认为true。
+    register-with-eureka: true
+    #是否从EurekaServer抓取已有的注册信息，默认为true。单节点无所谓，集群必须设置为true才能配合ribbon使用负载均衡
+    fetchRegistry: true
+    service-url:
+      #单机版
+      #defaultZone: http://localhost:7001/eureka
+      # 集群版
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+  instance:
+      instance-id: payment8002
+      #访问路径可以显示IP地址
+      prefer-ip-address: true
+#      #Eureka客户端向服务端发送心跳的时间间隔，单位为秒(默认是30秒)
+#      #lease-renewal-interval-in-seconds: 1
+#      #Eureka服务端在收到最后一次心跳后等待时间上限，单位为秒(默认是90秒)，超时将剔除服务
+#      #lease-expiration-duration-in-seconds: 2
+
+
+mybatis:
+  mapperLocations: classpath:mapper/**/*Mapper.xml
+  type-aliases-package: com.lzd.springcloud.entity    # 所有Entity别名类所在包
+  configLocation: classpath:mybatis-config.xml
+  
+#日志
+logging:
+  config: classpath:logback-admin.xml
+log:
+  level:
+    root: info
+    my: debug
+  file: logs/payment8002.log
+  #日志文件最大xxMB
+  maxSize: 30MB 
+  #保存xx天的日志
+  maxHistory: 20
+  #日志文件所在储存空间最大xxGB
+  totalSizeCap: 10GB
+
+

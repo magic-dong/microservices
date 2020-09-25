@@ -1,0 +1,15 @@
+2020-08-24 11:59:19,708 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -[LoggingFailureAnalysisReporter.java:40]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.lzd.springcloud.service.PaymentService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lzd.springcloud.service.PaymentService' in your configuration.
+

@@ -1,0 +1,19 @@
+2020-09-22 17:47:53,915 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -[LoggingFailureAnalysisReporter.java:40]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.cloud.sentinel' to com.alibaba.cloud.sentinel.SentinelProperties failed:
+
+    Property: spring.cloud.sentinel.datasource.ds1.nacos.ruleType
+    Value: null
+    Reason: 不能为null
+
+
+Action:
+
+Update your application's configuration
+

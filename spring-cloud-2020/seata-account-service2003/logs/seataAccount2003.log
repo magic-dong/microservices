@@ -1,0 +1,59 @@
+2020-09-25 10:22:05,204 [main] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 10:22:10,090 [main] INFO  -[StartupInfoLogger.java:61]- Started SeataAccount2003Application in 6.037 seconds (JVM running for 6.508)
+2020-09-25 10:29:24,747 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 10:29:30,330 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataAccount2003Application in 6.69 seconds (JVM running for 7.283)
+2020-09-25 10:31:38,555 [http-nio-2003-exec-1] INFO  -[AccountServiceImpl.java:33]- ------->account-service中扣减账户余额开始
+2020-09-25 10:31:58,608 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_account SET residue = residue - ?,used = used + ? WHERE user_id = ?; 
+2020-09-25 10:31:58,791 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 100(BigDecimal), 100(BigDecimal), 1(Long)
+2020-09-25 10:31:58,870 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 10:31:58,871 [http-nio-2003-exec-1] INFO  -[AccountServiceImpl.java:38]- ------->account-service中扣减账户余额结束
+2020-09-25 10:35:38,062 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 10:35:39,480 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataAccount2003Application in 1.656 seconds (JVM running for 376.449)
+2020-09-25 10:36:09,766 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 10:36:14,480 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataAccount2003Application in 5.795 seconds (JVM running for 6.351)
+2020-09-25 10:40:42,140 [http-nio-2003-exec-1] INFO  -[AccountServiceImpl.java:33]- ------->account-service中扣减账户余额开始
+2020-09-25 10:40:42,171 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_account SET residue = residue - ?,used = used + ? WHERE user_id = ?; 
+2020-09-25 10:40:42,368 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 100(BigDecimal), 100(BigDecimal), 1(Long)
+2020-09-25 10:40:42,484 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 10:40:42,486 [http-nio-2003-exec-1] INFO  -[AccountServiceImpl.java:38]- ------->account-service中扣减账户余额结束
+2020-09-25 10:43:13,460 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 10:43:14,961 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataAccount2003Application in 1.831 seconds (JVM running for 426.851)
+2020-09-25 10:45:55,265 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 10:46:00,959 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataAccount2003Application in 6.825 seconds (JVM running for 7.391)
+2020-09-25 10:46:42,373 [http-nio-2003-exec-1] INFO  -[AccountServiceImpl.java:33]- ------->account-service中扣减账户余额开始
+2020-09-25 10:47:02,402 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_account SET residue = residue - ?,used = used + ? WHERE user_id = ?; 
+2020-09-25 10:47:02,587 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 100(BigDecimal), 100(BigDecimal), 1(Long)
+2020-09-25 10:47:02,627 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 10:47:02,629 [http-nio-2003-exec-1] INFO  -[AccountServiceImpl.java:38]- ------->account-service中扣减账户余额结束
+2020-09-25 10:49:39,844 [http-nio-2003-exec-2] INFO  -[AccountServiceImpl.java:33]- ------->account-service中扣减账户余额开始
+2020-09-25 10:49:59,846 [http-nio-2003-exec-2] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_account SET residue = residue - ?,used = used + ? WHERE user_id = ?; 
+2020-09-25 10:49:59,848 [http-nio-2003-exec-2] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 100(BigDecimal), 100(BigDecimal), 1(Long)
+2020-09-25 10:50:32,223 [http-nio-2003-exec-3] INFO  -[AccountServiceImpl.java:33]- ------->account-service中扣减账户余额开始
+2020-09-25 10:50:52,222 [http-nio-2003-exec-3] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_account SET residue = residue - ?,used = used + ? WHERE user_id = ?; 
+2020-09-25 10:50:52,223 [http-nio-2003-exec-3] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 100(BigDecimal), 100(BigDecimal), 1(Long)
+2020-09-25 11:15:39,488 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 11:15:47,435 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataAccount2003Application in 9.058 seconds (JVM running for 9.587)
+2020-09-25 11:17:17,251 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 11:17:25,586 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataAccount2003Application in 10.088 seconds (JVM running for 11.081)
+2020-09-25 11:29:17,481 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 11:29:23,128 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataAccount2003Application in 6.843 seconds (JVM running for 7.597)
+2020-09-25 11:29:45,244 [http-nio-2003-exec-1] INFO  -[AccountServiceImpl.java:33]- ------->account-service中扣减账户余额开始
+2020-09-25 11:29:45,725 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_account SET residue = residue - ?,used = used + ? WHERE user_id = ?; 
+2020-09-25 11:29:45,933 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 100(BigDecimal), 100(BigDecimal), 1(Long)
+2020-09-25 11:38:00,935 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 11:38:09,045 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataAccount2003Application in 9.641 seconds (JVM running for 10.522)
+2020-09-25 11:39:29,347 [http-nio-2003-exec-3] INFO  -[AccountServiceImpl.java:33]- ------->account-service中扣减账户余额开始
+2020-09-25 11:39:30,380 [http-nio-2003-exec-3] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_account SET residue = residue - ?,used = used + ? WHERE user_id = ?; 
+2020-09-25 11:39:31,082 [http-nio-2003-exec-3] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 100(BigDecimal), 100(BigDecimal), 1(Long)
+2020-09-25 11:43:28,151 [http-nio-2003-exec-4] INFO  -[AccountServiceImpl.java:33]- ------->account-service中扣减账户余额开始
+2020-09-25 11:43:28,152 [http-nio-2003-exec-4] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_account SET residue = residue - ?,used = used + ? WHERE user_id = ?; 
+2020-09-25 11:43:28,153 [http-nio-2003-exec-4] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 100(BigDecimal), 100(BigDecimal), 1(Long)
+2020-09-25 11:43:28,348 [http-nio-2003-exec-4] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 11:43:48,896 [http-nio-2003-exec-4] INFO  -[AccountServiceImpl.java:38]- ------->account-service中扣减账户余额结束
+2020-09-25 11:49:28,737 [restartedMain] INFO  -[SpringApplication.java:651]- No active profile set, falling back to default profiles: default
+2020-09-25 11:49:34,771 [restartedMain] INFO  -[StartupInfoLogger.java:61]- Started SeataAccount2003Application in 7.654 seconds (JVM running for 8.45)
+2020-09-25 11:50:00,098 [http-nio-2003-exec-1] INFO  -[AccountServiceImpl.java:33]- ------->account-service中扣减账户余额开始
+2020-09-25 11:50:00,147 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==>  Preparing: UPDATE t_account SET residue = residue - ?,used = used + ? WHERE user_id = ?; 
+2020-09-25 11:50:00,417 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- ==> Parameters: 100(BigDecimal), 100(BigDecimal), 1(Long)
+2020-09-25 11:50:00,785 [http-nio-2003-exec-1] DEBUG -[BaseJdbcLogger.java:159]- <==    Updates: 1
+2020-09-25 11:50:00,787 [http-nio-2003-exec-1] INFO  -[AccountServiceImpl.java:38]- ------->account-service中扣减账户余额结束

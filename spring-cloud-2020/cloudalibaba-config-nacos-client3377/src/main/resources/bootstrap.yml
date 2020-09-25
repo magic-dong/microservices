@@ -1,0 +1,39 @@
+# nacos配置
+server:
+  port: 3377
+
+spring:
+  application:
+    name: nacos-config-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #Nacos服务注册中心地址
+      config:
+        server-addr: localhost:8848 #Nacos作为配置中心地址
+        file-extension: yml #指定properties,yaml,yml格式的配置
+        #配置分组,不配置默认分组为DEFAULT_GROUP
+        group: TEST_GROUP
+        namespace: 485835d3-f593-4894-a931-e3e0c7f9b5b2
+
+# 公式（严格匹配）
+# ${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
+# nacos-config-client-dev.yml
+
+# nacos-config-client-test.yml   ----> config.info
+
+
+#日志
+logging:
+  config: classpath:logback-admin.xml
+log:
+  level:
+    root: info
+    my: debug
+  file: logs/nacos-config-client3377.log
+  #日志文件最大xxMB
+  maxSize: 30MB 
+  #保存xx天的日志
+  maxHistory: 20
+  #日志文件所在储存空间最大xxGB
+  totalSizeCap: 10GB
